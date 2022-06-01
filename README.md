@@ -1,25 +1,40 @@
-# {package_name}
+# @fvilers/are-same
 
-{Library description}
+A TypeScript helper function that compare arguments for sameness
 
 ## Installation
 
 ```
-npm install {package_name}
+npm install @fvilers/are-same
 ```
 
 or
 
 ```
-yarn add {package_name}
+yarn add @fvilers/are-same
 ```
 
 ## Usage
 
 ```ts
-// TODO: example usage of the library
+import areSame from "@fvilers/are-same";
+
+const x = {
+  dob: new Date(2022, 5, 1, 9, 34),
+  foo: "bar",
+  n: 42,
+  score: { values: [0, 1, 1, 2, 3, 5] },
+};
+const y = {
+  dob: new Date(2022, 5, 1, 9, 34),
+  foo: "bar",
+  n: 42,
+  score: { values: [0, 1, 1, 2, 3, 5] },
+};
+
+console.log("'x' and 'y' are", areSame(x, y) ? "the same" : "different");
 ```
 
-```ts
-// TODO: example result from the library usage
+```
+'x' and 'y' are the same
 ```
