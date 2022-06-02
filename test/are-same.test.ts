@@ -75,6 +75,13 @@ describe("areSame", () => {
     expect(areSame(x, y)).toBe(false);
   });
 
+  test("should return true for same symbol reference", () => {
+    const x = Symbol("foo");
+    const y = x;
+
+    expect(areSame(x, y)).toBe(true);
+  });
+
   test("should return false for same symbol", () => {
     const x = Symbol("foo");
     const y = Symbol("foo");
