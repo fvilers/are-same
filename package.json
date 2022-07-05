@@ -1,6 +1,6 @@
 {
   "name": "@fvilers/are-same",
-  "version": "1.0.0",
+  "version": "2.0.0",
   "description": "A TypeScript helper function that compare arguments for sameness",
   "type": "module",
   "main": "dist/src/are-same.js",
