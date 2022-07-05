@@ -14,10 +14,14 @@ or
 yarn add @fvilers/are-same
 ```
 
+# ECMAScript module
+
+Starting with version 2.0.0, this library will be published as an ECMAScript module.
+
 ## Usage
 
 ```ts
-import areSame from "@fvilers/are-same";
+import { areSame } from "@fvilers/are-same";
 
 const x = {
   dob: new Date(2022, 5, 1, 9, 34),

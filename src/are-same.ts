@@ -1,7 +1,7 @@
-import isDate from "@fvilers/is-date";
-import isMap from "@fvilers/is-map";
-import isObject from "@fvilers/is-object";
-import isSet from "@fvilers/is-set";
+import { isDate } from "@fvilers/is-date";
+import { isMap } from "@fvilers/is-map";
+import { isObject } from "@fvilers/is-object";
+import { isSet } from "@fvilers/is-set";
 
 function areSameType(x: any, y: any): boolean {
   return (
@@ -63,7 +63,7 @@ function areSameObject(x: object, y: object): boolean {
   return true;
 }
 
-function areSame(x: any, y: any): boolean {
+export function areSame(x: any, y: any): boolean {
   if (!areSameType(x, y)) {
     return false;
   }
@@ -90,5 +90,3 @@ function areSame(x: any, y: any): boolean {
 
   return x === y;
 }
-
-export default areSame;

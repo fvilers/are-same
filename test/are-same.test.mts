@@ -1,4 +1,4 @@
-import areSame from "../src/are-same";
+import { areSame } from "../src/are-same.js";
 
 describe("areSame", () => {
   test("should return false for different type", () => {
